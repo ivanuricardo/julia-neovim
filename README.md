@@ -11,4 +11,4 @@ LazyVim is a simple and easy way to set up Neovim with a lot of useful plugins.
 
 Additionally, I use [quarto-nvim](https://github.com/quarto-dev/quarto-nvim) for working with markdown files, and to integrate with Julia.
 The combination of these two configs have been my daily driver for the past year now.
-let me know if you have any questions or suggestions!
+Let me know if you have any questions or suggestions!
