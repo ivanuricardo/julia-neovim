@@ -32,7 +32,6 @@ return {
         "python",
         "vim",
         "yaml",
-        "python",
         "julia",
         "r",
       },
