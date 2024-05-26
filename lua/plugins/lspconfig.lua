@@ -7,7 +7,13 @@ return {
       servers = {
         pyright = {},
         r_language_server = {},
-        julials = {},
+        julials = {
+          -- This just adds dirname(fname) as a fallback (see nvim-lspconfig#1768).
+          root_dir = function(fname)
+            local util = require("lspconfig.util")
+            return util.root_pattern("Project.toml")(fname) or util.find_git_ancestor(fname) or util.path.dirname(fname)
+          end,
+        },
         marksman = {
           -- also needs:
           -- $home/.config/marksman/config.toml :
