@@ -7,7 +7,7 @@ return {
     opts = {},
     -- stylua: ignore
     keys = {
-        { "<C-s>", mode = { "n", "x", "o" }, function() require("flash").jump() end, desc = "Flash" },
+        { "m", mode = { "n", "x", "o" }, function() require("flash").jump() end, desc = "Flash" },
         { "s", mode = { "n", "x", "o" }, false },
         { "S", mode = { "n", "o", "x" }, false },
         { "r", mode = "o", function() require("flash").remote() end, desc = "Remote Flash" },

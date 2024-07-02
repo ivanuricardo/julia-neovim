@@ -5,6 +5,7 @@ return {
     opts = {
       ---@type lspconfig.options
       servers = {
+        lua_ls = {},
         pyright = {},
         r_language_server = {},
         julials = {
